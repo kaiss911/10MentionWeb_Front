@@ -14,7 +14,15 @@
         Cette balise avec la valeur author de l'attribut name spécifie l'auteur de la page.
         Elle peut être utiliser pour indique qui a crée le contenu de la page
     -->
+    <style>
+        body{
+            background-color: rgb(245, 233, 233);
+        }
 
+        h2{
+            color: red;
+        }
+    </style>
     <title>Balises de texte et CSS</title>
 </head>
 <body>
@@ -34,20 +42,55 @@
         - est toujours précéder ou suivi d'un saut de ligne
         - peut avoir une taille définie -> il occupe toute la largeur (de la page) disponible
     -->
+        
+    
+    
         <h1>Titre h1</h1>
-        <!--
-            La balise <h1> est une balise HTML utiliser pour définir un titre de premier niveau dans une page web. Le "h" dans h1 signifie "header" et "1" indique que c'est le titre le plus haut dans la hiérarchie des titres.
-                En HTML, les balises de titres vont de h1 a h6 ou h1 est le titre de premier niveau (le plus important) et h6 est le titre de sixieme niveaux (le moins important)
-                Chaque niveau de titre représente un hiérarchie, et les titres sont utilisés pour organiser et structurer le contenu de la page
-                Les titres sont des elements de types bloc : suivis d'un retour a la ligne et une marge par défaut.
+    <!--
+        La balise <h1> est une balise HTML utiliser pour définir un titre de premier niveau dans une page web. Le "h" dans h1 signifie "header" et "1" indique que c'est le titre le plus haut dans la hiérarchie des titres.
+        En HTML, les balises de titres vont de h1 a h6 ou h1 est le titre de premier niveau (le plus important) et h6 est le titre de sixieme niveaux (le moins important)
+        Chaque niveau de titre représente un hiérarchie, et les titres sont utilisés pour organiser et structurer le contenu de la page Les titres sont des elements de types bloc : suivis d'un retour a la ligne et une marge par défaut.
+    -->
+        <h2>Titre h2</h2>    
+       <!-- h${Titre $}*5 -->
+       <h2>Titre h2</h2> 
+       <h2>Titre h2</h2> 
+       <h2>Titre h2</h2> 
+       
+       <hr> <!-- hr horizontal ruler (régle horizontal = ligne horizontale), éléments de type block -->
+
+    <!-- 
+        La balise <p> en HTML est utilisée pour définir un paragraphe de texte. Elle indique au navigateur web que le texte à l'intérieur de la balise doit être interprété comme un paragraphe distinct. 
+        Les paragraphes sont des éléments de type bloc
+        On ne doit pas mettre un paragraphe dans un paragraphe
+    -->
+       <p>Ceci est un paragraphe, il n'y a qu'une seule phrase</p>
+       <p>Et la un second paragraphe.</p>
+
+       <hr>
+
+       
+       
+       <h2>le CSS : Cascading Style Sheet</h2>
+       <p>Le CSS permet de faire du style sur nos page html</p>
+       <!-- 
+            3 façon de déclarer le style:
+                -style en ligne : avec l'attribut style dans la balise ouvrante
+                -style dans la balise <style> directement dans la partie head (l'en-tête)
+                -déclarer le style dans un fichier .css feuille de style
         -->
         
-        <h2>Titre h2</h2>    
-       <!-- h${Titre $} -->
-       <hr> <!-- hr horizontal ruler -->
-       <h2>Titre h2</h2> 
-       <h2>Titre h2</h2> 
-       <h2>Titre h2</h2> 
-        
-    </body>
-    </html>
+        <h3>Le CSS dans la balise</h3>
+        <p>La premiere façon de faire du style dans un element est de declarer l'attribut style sur celui-là. Ce n'est pas la meilleur de faire</p>
+        <p style="color: green;font-weight: bolder;">Je suis un paragraphe stylé !</p>
+
+        <h3>Le CSS dans une feuille de style externe</h3>
+        <p>La dernière est la meilleure façon pour faire du style :
+        on crée un dossier css avec un fichier "style.css" à l'interieur il faudra alors lier nos deux fichier gràce a la balise link. on pourra allors faire du style sur les elements qui se trouve sur notre page. Exemple, on declare que tout les paragraphes doivent etre en bleu </p>
+
+
+
+
+
+</body>    
+</html>
