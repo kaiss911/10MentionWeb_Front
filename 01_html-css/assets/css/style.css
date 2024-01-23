@@ -1,0 +1,15 @@
+/* Commentaire en CSS */
+/* feuille de style  */
+
+/* Syntaxe du langage de développement CSS */
+
+/*
+    selecteur {
+        propriété: valeur ;
+    }
+
+*/
+
+p {
+    color: blue;
+}
