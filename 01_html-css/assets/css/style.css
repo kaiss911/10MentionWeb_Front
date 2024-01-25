@@ -10,6 +10,11 @@
 
 */
 
-p {
+/*Je sélectionne deux élement en même temps avec une virgule (,) */
+p, pre{
     color: blue;
+}
+
+span{
+    color: green;
 }
