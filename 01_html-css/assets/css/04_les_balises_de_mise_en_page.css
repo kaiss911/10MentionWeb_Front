@@ -1,7 +1,8 @@
-body{
+body {
     background-color: #eeedeb;
 }
-div.navigation{
+
+div.navigation {
     text-align: center;
     border: solid 2px #3c0753;
     padding: 20px;
@@ -12,7 +13,7 @@ h1{
     color: #3c0753;
 }
 
-.navigation a{
+.navigation a {
     font-weight: bold;
     text-decoration: none;
     background-color: #d9a9db;
@@ -27,18 +28,61 @@ h1{
     background-color: black;
 }
 
-div.main{
+div.main {
     border: 2px solid #3c0753;
     padding: 20px 50px;
     margin-top: 10px;
 }
 
-div.section1{
+div.section1, div.section2 {
     text-align: center;
 }
 
-div.section1 img{
+div.section1 img {
     border-radius: 20px;
 }
 
+div.section2 {
+    background-image: url(../img/unsplash.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
 
+div.section2 p {
+    display: inline-block;
+    border: solid 2px #3c0753;
+    padding: 20px;
+    width: 33%;
+    background-color: black;
+    text-align: left;
+}
+
+div.piedDePage {
+    border: solid 2px #3c0753;
+    margin-top: 20px;
+    /* text-align: center; */
+
+}
+
+div.piedDePage ul {
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+
+}
+
+div.piedDePage ul li {
+    margin-bottom: 20px;
+}
+
+div.piedDePage ul li a {
+    color: #3c0753;
+    background-color: #d9a9db;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
