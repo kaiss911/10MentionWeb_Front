@@ -1,20 +1,25 @@
-body {
-    background-color: #eeedeb;
+*{
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-div.navigation {
+body {
+    background-color: #eeedeb;
     text-align: center;
-    border: solid 2px #3c0753;
+}
+
+header{
+    border: 2px solid #3c0753;
     padding: 20px;
 }
 
-h1{
+h1 {
     text-transform: uppercase ;
     color: #3c0753;
     font-size: 50px;
 }
 
-.navigation a {
+nav a{
     font-weight: bold;
     text-decoration: none;
     background-color: #d9a9db;
@@ -24,26 +29,21 @@ h1{
     padding: 5px 0;
     border-radius: 10px;
 }
-
-.navigation a:hover {
-    background-color: black;
+nav a:hover {
+    background-color: #3c0753;
 }
-
-div.main {
-    border: 2px solid #3c0753;
-    padding: 20px 50px;
+/* style pour le main */
+main {
     margin-top: 10px;
+    padding: 20px 50px;
+    border: 2px solid #3c0753;
 }
 
-div.section1, div.section2 {
-    text-align: center;
-}
-
-div.section1 img {
+main :first-child img { 
     border-radius: 20px;
 }
 
-div.section2 {
+main section:nth-child(2){
     background-image: url(../img/unsplash.jpg);
     padding: 100px;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ div.section2 {
     color: white;
 }
 
-div.section2 p {
+main section:nth-child(2) article{
     display: inline-block;
     border: solid 2px #3c0753;
     padding: 20px;
@@ -60,30 +60,27 @@ div.section2 p {
     background-color: black;
     text-align: left;
 }
+/* style pour le footer */
 
-div.piedDePage {
+footer {
     border: solid 2px #3c0753;
     margin-top: 20px;
-    /* text-align: center; */
-
 }
 
-div.piedDePage ul {
+footer ul {
     display: inline-block;
-    width: 30%;
+    width: 33%;
     list-style: none;
-
 }
 
-div.piedDePage ul li {
+footer ul li {
     margin-bottom: 20px;
 }
 
-div.piedDePage ul li a {
+footer a {
     color: #3c0753;
-    background-color: #d9a9db;
     padding: 8px 12px;
-    border-radius: 3px;
-    font-weight: bold;
-    text-decoration: none;
+    background-color: #d9a9db;
+    border-radius: 10px;
 }
+

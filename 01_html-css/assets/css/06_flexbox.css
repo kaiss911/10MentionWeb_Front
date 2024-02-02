@@ -1,0 +1,60 @@
+/* feuilles de style pour la page flex box */
+p{
+    font-size: 20px;
+}
+
+div {
+    font-weight: bolder;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.style div{
+    width: 200px;
+    height: 150px;
+    color: #fff;
+    line-height: 150px;
+    /* line-height nous permet de definir l'espacement entre les ligne d'un paragraphe dans un elements*/
+}
+
+.style :first-child {
+    background-color: orange;
+}
+
+.style :nth-child(2) {
+    background-color: blue;
+}
+
+.style :nth-last-child(1){
+    background-color: green;
+}
+
+
+
+/*B-Ajout du flex */
+#conteneurB {
+    display: flex;
+}
+
+
+/* C-direction */
+#conteneurC {
+    display:flex;
+    flex-direction: row;
+}
+
+#conteneurD {
+    display:flex;
+    flex-direction: column;
+}
+
+#conteneurE {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#conteneurF {
+    display:flex;
+    flex-direction: column-reverse;
+}
+
