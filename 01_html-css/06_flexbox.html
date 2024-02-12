@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/06_flexbox.css">
-    <title>Document</title>
+    <title>Flexbox</title>
 </head>
 <body>
     <header>
@@ -43,40 +43,101 @@
                     ->column-reverse : organiser sur une olonne mais en ordre inversé<br>
             </p>
 
-
             <h3>Row</h3>
-            <div class="style" id="conteneurC">
+            <div class="style" id="conteneurRow">
                 <div>éléments1</div>
                 <div>éléments2</div>
                 <div>éléments3</div>
             </div>
-
 
             <h3>Column</h3>
-            <div class="style" id="conteneurD">
+            <div class="style" id="conteneurColumn">
                 <div>éléments1</div>
                 <div>éléments2</div>
                 <div>éléments3</div>
             </div>
-
 
             <h3>Row-reverse</h3>
-            <div class="style" id="conteneurE">
+            <div class="style" id="conteneurRow-reverse">
                 <div>éléments1</div>
                 <div>éléments2</div>
                 <div>éléments3</div>
             </div>
-
 
             <h3>Column-reverse</h3>
-            <div class="style" id="conteneurF">
+            <div class="style" id="conteneurColumn-reverse">
+                <div>éléments1</div>
+                <div>éléments2</div>
+                <div>éléments3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>D-Alignement</h2>
+            <p>Les éléments sont organisés soit horizontalement (par défaut), soit verticalement.
+                <ul>
+                    <li>si vos éléments sont organisés horizontalement : l'axe principale (main axis) est l'axe horizontale,
+                        l'axe secondaire (cross axis) est l'axe vertical.</li>
+                    <li>si vos éléments sont organisés verticalement : l'axe principale (main axis) est l'axe verticale, l'axe
+                        secondaire (cross axis) est l'axe horizontale.</li>
+                </ul>
+            </p>
+            <h3>1 - Alignement sur l'axe principal</h3>
+            <p>Afin d'aligner nos éléments sur l'axe principale : on utilise la propriété du flex<span>justify-content</span></p>
+            <p>Cette propriété gère la distribution des emplacements des flex-items suivant la place disponible dans le flex-container. Elle le fait selont le positionnement de l'axe principale</p>
+            <ul>
+                <li>flex-start : aligner au début (par défaut)</li>
+                <li>flex-end : aligner à la fin</li>
+                <li>center : aligner au centre</li>
+                <li>space-between : les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux)</li>
+                <li>space-around : les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités</li>
+                <li>space-evenly : les éléments sont répartit uniformement dans le conteneur d'alignement le long de l'axe principal</li>
+            </ul>
+
+            <h4>Flex-start - direction horizontale</h4>
+            <div class="style" id="conteneurFlex-start">
                 <div>éléments1</div>
                 <div>éléments2</div>
                 <div>éléments3</div>
             </div>
 
+            <h4>Flex-end - direction horizontale</h4>
+            <div class="style" id="conteneurFlex-end">
+                <div>éléments1</div>
+                <div>éléments2</div>
+                <div>éléments3</div>
+            </div>
+
+            <h4>Center - direction horizontale</h4>
+            <div class="style" id="conteneurCenter">
+                <div>éléments1</div>
+                <div>éléments2</div>
+                <div>éléments3</div>
+            </div>
+
+            <h4>Space-between - direction horizontale</h4>
+            <div class="style" id="conteneurSpace-between">
+                <div>éléments1</div>
+                <div>éléments2</div>
+                <div>éléments3</div>
+            </div>
+
+            <h4>Space-around - direction horizontale</h4>
+            <div class="style" id="conteneurSpace-around">
+                <div>éléments1</div>
+                <div>éléments2</div>
+                <div>éléments3</div>
+            </div>
+            
+            <h4>Space-evenly - direction horizontale</h4>
+            <div class="style" id="conteneurSpace-evenly">
+                <div>éléments1</div>
+                <div>éléments2</div>
+                <div>éléments3</div>
+            </div>
 
         </section>
+
    
    
    
