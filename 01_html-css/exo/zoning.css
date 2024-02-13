@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 50%;
+    margin: 50px auto;
+}
+
+div{
+    background-color: rgb(213, 193, 233);
+    height: 400px;
+    width: 400px;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    height: 60px;
+    text-align: center;
+
+}
+
+    
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+aside{
+    background-color: brown;
+    padding: 50px;
+}
+
+
+
+
+header :first-child{
+    background-color: pink;
+}
+header :last-child{
+    background-color: aqua;
+}
