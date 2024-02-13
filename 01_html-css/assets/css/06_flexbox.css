@@ -64,11 +64,11 @@ span{
 /*********************************B-Ajout du flex *********************************/
 /* 
 Principe du flexbox:  permet de passer d'un contexte bloc à un contexte flex, pour le faire il faut appliquer un modéle de boite flexible sur le conteneur de mes éléments, : le conteneur = l'élément  parent.
-Dans le contexte flex on vas  avoir un axe principale (main axis), il est par défaut horizontal et il commence à gauche. Les élément qui sont à l'intérieur du parent ( avec un contexte flex) vont être distribués en fonction de cet axe principal.*/
+Dans le contexte flex on vas  avoir un axe principale (main axis) ,il est par défaut horizontal et il commence à gauche. Les élément qui sont à l'intérieur du parent ( avec un contexte flex) vont être distribués en fonction de cet axe principal.*/
 
 #conteneurB {
     display: flex;
-    /* Instruction à donner au parent , suite à cette application les éléments dans le conteneurB ont totalement changés: les div s'affichent côte à côte */
+    /* Instruction à donner au parent ,suite à cette application les éléments dans le conteneurB ont totalement changés: les div s'affichent côte à côte */
 }
 
 
@@ -212,4 +212,42 @@ Dans le contexte flex on vas  avoir un axe principale (main axis), il est par d�
 #conteneurE-AS :nth-child(2){
     align-self: flex-end;
     /*Elle permet de contrôler l'alignement vertical d'un élément spécifique à l'intérieur d'un conteneur flex. L'élément est aligné sur le bord inférieur du conteneur flex*/
+}
+
+/*
+    display:flex; pour apliquer se que l'on veut
+    flex-direction = direction de l'objet (row par defaut)
+
+    justify content = axe principal
+    align-items = axe secondaire
+
+*/
+
+
+
+
+
+
+
+
+
+/********************E retour a la ligne**********************/
+
+.wrap :nth-child(odd){ /*Pseudo classe qui séléctionne tout les éléments avec un ordre impair*/
+    background-color: orange;
+}
+
+.wrap :nth-child(even){ /*Pseudo classe qui séléctionne tout les éléments avec un ordre impair*/
+    background-color: blue;
+}
+
+/* Si flex-wrap vaut nowrap et que les flex-items sont dans leur configuration par défaut, alors les flex-items seront rétrécis, si le flex-container est lui-même suffisamment rétréci*/
+#conteneurWrap{
+    flex-wrap: wrap;
+    /* Si flex-wrap vaut wrap, alors les flex-items seront répartis sur une nouvelle ligne*/
+}
+
+#conteneurWrap-reverse{
+    flex-wrap: wrap-reverse;
+    /* les éléments flexibles vont passer à la ligne de manière inverse par rapport à leur ordre d'origine*/
 }

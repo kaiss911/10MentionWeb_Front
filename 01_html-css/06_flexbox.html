@@ -93,6 +93,7 @@
                 <li>space-around : les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités</li>
                 <li>space-evenly : les éléments sont répartit uniformement dans le conteneur d'alignement le long de l'axe principal</li>
             </ul>
+            <a href="#bas" id="haut">bas page</a>
 
             <h4>Flex-start - direction horizontale</h4>
             <div class="style" id="conteneurFlex-start">
@@ -236,14 +237,93 @@
                 <div>Elément 2</div>
                 <div>Elément 3</div>
             </div>
+        </section>
+
+        <section>
+            <h2>E - Retour à la ligne</h2>
+            <p>Par défaut, les blocks essaient de rester sur la même ligne même si ils n'ont pas la place (ce qui provoque parfois des problème de conception). Si vous le souhaitez, vous pouvez demander au block de passer a la ligne lorsqu'ils n'ont pas la place en utilisant la propriété <span>flex-wrap</span></p>
+            <p>Elle peut avoir les valeurs suivantes : </p>
+            <ul>
+                <li>nowrap : pas de retour a la ligne (la valeur par défaut)</li>
+                <li>wrap : les éléments vont à la ligne lorsqu'il n'y a plus de place</li>
+                <li>wrap-reverse : les éléments vont à la ligne lorsqu'il n'y a pas de place dans le sens inverse</li>
+            </ul>
+            <h3>nowrap</h3>
+            <div class="style wrap" id="conteneurWrap">
+                <!-- div{Element $}*8 -->
+                <div>Element 1</div>
+                <div>Element 2</div>
+                <div>Element 3</div>
+                <div>Element 4</div>
+                <div>Element 5</div>
+                <div>Element 6</div>
+                <div>Element 7</div>
+                <div>Element 8</div>
+                <div>Element 9</div>
+                <div>Element 10</div>
+                <div>Element 11</div>
+            </div>
+
+            <h3>wrap-reverse</h3>
+            <div class="style wrap" id="conteneurWrap-reverse">
+                <!-- div{Element $}*8 -->
+                <div>Element 1</div>
+                <div>Element 2</div>
+                <div>Element 3</div>
+                <div>Element 4</div>
+                <div>Element 5</div>
+                <div>Element 6</div>
+                <div>Element 7</div>
+                <div>Element 8</div>
+                <div>Element 9</div>
+                <div>Element 10</div>
+                <div>Element 11</div>
+            </div>
+
+
+            <h2>F - Répartir plusieurs lignes</h2>
+        <p>
+            Si vous avez plusieurs ligne dans votre flexbox,vous pouvez choisir comment celles-ci seront réparties avec
+            <span>align-content</span>.
+            Cette propriété permet de gérer l'alignement des différents lignes (ou colonnes) les par rapports au autres.
+            Cette propriété n'aura d'éffet que si le conteneur flexible posséde plusieurs lignes(si l'axe principale est
+            horizontal) ou plusieurs colonnes ( si l'axe principle est vertical) et que si le flex-wrap est présent.
+        </p>
+        <p> Les valeurs de cette propriété :</p>
+        <ul>
+            <li>flex-start : les éléments sont placés au début</li>
+            <li>flex-end : les élélements sont placés à la fin</li>
+            <li>center : les éléments sont placés au centre</li>
+            <li>space-between : les éléments sont séparés avec de l'éspace entre eux </li>
+            <li>space-around : les éléments sont séparés avec de l'éspace entre eux, mais il y'a aussi de l'éspace au
+                début et à la fin</li>
+            <li>space-evenly : Les éléments sont répartis uniformément dans le conteneur d'alignement le long de l'axe
+                principal. </li>
+            <li>stretch (par défaut) : les éléments s'étirent pour occuper tout l'éspace</li>
+        </ul>
+
+        <h3>Stretch par défaut</h3>
+        <div class="style wrap" id="stretch">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
 
         </section>
 
    
    
    
-   
+    <a id="bas" href="#haut">haut de la page</a>
     </main>
-    
 </body>
 </html>
