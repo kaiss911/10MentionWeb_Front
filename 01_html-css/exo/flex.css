@@ -35,10 +35,7 @@ section{
     text-align: center;
 }
 h3{
-
-
-    
-    width: 100%
+    width: 100%;
 }
 #zoning1 header{
     background-color: #f7f39a;
@@ -47,7 +44,6 @@ h3{
 #zoning1 aside, #zoning1 section{
     height: 500px;
     line-height: 500px;
-
 }
 #zoning1 aside{
     background-color:#10828c;
@@ -58,7 +54,33 @@ h3{
     width: 80%;
     margin: 0;
 }
+/*******************************Exercice 3**********************************/
 
+#zoning2{
+    background-color: #ffd6d6;
+    text-align: center;
+}
+#zoning2 header {
+    background-color: #10828c;
+    height: 70px;
+    line-height: 70px;
+}
+#zoning2 div {
+    display: flex;
+}
+#zoning2 aside{
+    background-color: tomato;
+    height: 500px;
+    line-height: 500px;
+    width: 20%;
+}
+#zoning2 div div{
+    height: 500px;
+    line-height: 500px;
+    width: 60%;
+}
 
-
+#zoning2 div div p{
+    width: 100%;
+}
 
