@@ -1,48 +1,96 @@
-*{
+/* *{
     box-sizing: border-box;
-}
+} */
 body{
     width: 50%;
     margin: 50px auto;
 }
 
-div{
+.zonning{
     background-color: rgb(213, 193, 233);
     height: 400px;
     width: 400px;
-
 }
 
-header{
+#exo1 header{
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    align-items: stretch;
+    text-align: center;
+    height: 100px;
+    width: 400px;
+    line-height: 50px;
+
 }
 
-nav{
-    height: 60px;
+main{
+    display: flex;
+    flex-direction: row;
+
+    height: 300px;
+    width: 400px;
+    align-items: stretch;
+}
+.exo1 nav{
+    height: 50px;
+}
+.zones2 section{
+    background-color: #A0B08B;
+    width: 250px;
+    text-align: center;
+    line-height: 300px;
+}
+
+aside{
+    background-color: #10828C;
+    width: 150px;
+    line-height: 300px;
     text-align: center;
 
 }
 
-    
-main{
+.exo1 :first-child{
+    background-color: #FFD6D6;
+}
+.exo1 :last-child{
+    background-color: #F7F39A;
+}
+
+
+.exo2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 30%;
+    line-height: 50px;
+}
+
+.exo2 nav{
+    background-color: chartreuse;
+    height:50%;
+}
+
+.exo2 :last-child{
+    background-color: azure;
+    height: 50%;
+}
+
+.zones3{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
+
+    height: 70%;
+    background-color: chocolate;
 }
 
-aside{
-    background-color: brown;
-    padding: 50px;
-}
-
-
-
-
-header :first-child{
-    background-color: pink;
-}
-header :last-child{
-    background-color: aqua;
+.zones3 :nth-child(2){
+    background-color: aliceblue;
+    width: 50%;
+    height: 100%;
+    line-height: 250px;
+    
 }
