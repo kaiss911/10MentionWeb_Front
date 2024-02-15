@@ -3,13 +3,13 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
     background-color: black;
-}
+} */
 
-h1,h2{
+/* h1,h2{
     color: azure;
-}
+} */
 
 nav{
     display: flex;
@@ -21,6 +21,42 @@ nav{
 nav a{
     color: #333;
     font-weight: bold;
+}
+/* ***************************************************exercice 2******** */
+
+section{
+    width: 50%;
+    margin: 100px auto;
+}
+#zoning1{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffd6d6;
+    text-align: center;
+}
+h3{
+
+
+    
+    width: 100%
+}
+#zoning1 header{
+    background-color: #f7f39a;
+    width: 100%;
+}
+#zoning1 aside, #zoning1 section{
+    height: 500px;
+    line-height: 500px;
+
+}
+#zoning1 aside{
+    background-color:#10828c;
+    width: 20%;
+}
+#zoning1 section{
+    background-color:#A0B08B;
+    width: 80%;
+    margin: 0;
 }
 
 
