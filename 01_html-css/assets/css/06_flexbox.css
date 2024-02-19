@@ -140,7 +140,7 @@ Dans le contexte flex on vas  avoir un axe principale (main axis) ,il est par d�
 #conteneurFlex-end-vertical{
     flex-direction: column;
     justify-content: flex-end;
-    ;/* Dans cet exemple, justify-content vaut flex-end. Avec un flex-direction qui vaut column, les flex-items sont alignés en bas du conteneur dans l'ordre du HTML. Il n'y a aucun espace entre eux. L'espace disponible dans le flex-container est laissé à gauche.*/
+    /* Dans cet exemple, justify-content vaut flex-end. Avec un flex-direction qui vaut column, les flex-items sont alignés en bas du conteneur dans l'ordre du HTML. Il n'y a aucun espace entre eux. L'espace disponible dans le flex-container est laissé à gauche.*/
 
 }
 

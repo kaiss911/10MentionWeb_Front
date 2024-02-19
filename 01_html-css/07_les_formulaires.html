@@ -20,10 +20,12 @@
             -method : permet d'indiquer si on recupere les données ou bien on les envoie .Exemple :
             lorsque l'on s'inscrit sur un site ,on envoie les données vers la base de données (BDD),
             lorsque l'on se connecte, on récupére et verifie des données qui se trouve déja dans une BDD
-            ->method=Get 
+            ->method=Get : les informations sont passées dans la barre d'adresse
+            -> method="post" : envoie les données dans le corps de la requête sans passer par la barre d'adresse, c'est la méthode la plus utilisée et la plus sécurisée.
      -->
-     <form action="#" method="post" enctype="multipart/form-data">  <!--Début du formulaire-->
+    <form action="#" method="get" enctype="multipart/form-data" autocomplete="off">  <!--Début du formulaire-->
         <!-- enctype="multipart/form-data" on l'utilise quand on a un champs d'envoi de fichier dans le formulaire -->
+        <!--  Lorsque la valeur de l'attribut autocomplete est défini sur "off", cela signifie que les navigateurs ne doivent pas suggérer ou compléter automatiquement les valeurs des champs de formulaire basées sur l'historique de saisie de l'utilisateur -->
      <fieldset>
         <!-- 
             fieldset permet d'assembler des éléments de notre formulaire lorsqu'ils sont en lien 
@@ -53,6 +55,7 @@
             <div>
                 <label for="age">Votre âge</label>
                 <input type="number" name="age" id="age" placeholder="votre âge">
+                <!-- type number -> permet d'entrer seulement un nombre -->
             </div>
             <!-- Lorsque l'on fait des boutons de type radio cela signifie qu'un seul peut être coché. Naturellement, celui qui a l'attribut checked sera coché d'office. -->
                 <!-- div>label+input -->
@@ -81,16 +84,18 @@
             <div>
                 <label for="photo"></label>
                 <input type="file" name="photo" id="photo">
+                <!-- type file -> premet l'envoie d'un fichier -->
             </div>
             <div>
                 <label for="pays">Vous résidez en :</label>
-                <select name="pays" id="pays">
-                    <optgroup label="Europe">
+                <!-- la balise select vient toujours avec des options : elle permet de faire un menu déroulant, on la retrouve souvent pour l'année de naissance ou encore le département dans lequel on vit -->
+                <select name="pays" id="pays"><!--Indique le début et la fin de la liste déroulante-->
+                    <optgroup label="Europe"><!-- grouper les options : séparer les pays en fonction de leur continent-->
                         <option value="france">France</option>
                         <option value="espagne">Espagne</option>
                         <option value="italie">Italie</option>
-                        <option value="royaume-uni">Royaume-Uni</option>
-                    </optgroup>
+                        <option value="royaume-uni" selected>Royaume-Uni</option>
+                    </optgroup><!-- L'attribut selected est utilisé pour définir qu'un élément d'une liste déroulante est selectionné par défaut lorsque la page est chargée -->
                     <optgroup label="Amérique">
                         <option value="canada">Canada</option>
                         <option value="etat-unis">Etat-Unis</option>
@@ -110,7 +115,8 @@
         </div>
         <div>
             <label for="mdp">Mot de passe</label>
-            <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required>
+            <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required autocomplete="email">
+            <!-- type password -> permet de masquer le mot de passe -->
         </div>
         <div>
             <label for="email">Votre email</label>
@@ -132,7 +138,7 @@
         <div>
             <label for="commentaire" id="commentaire">Avez-vous une précision à apporter</label>
             <br>
-            <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+            <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea><!-- textarea -> zone de texte multiligne rows : nombre de ligne, cols nombre de rangées de textarea -->
         </div>
     </fieldset>
 
