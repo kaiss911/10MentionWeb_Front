@@ -17,17 +17,43 @@ caption{
 }
 table{
     border: #6e2142 3px solid;
-    width: 90%;
-    margin-top: 50px;
+    width: 100%;
+    /* margin-top: 50px; */
     padding: 30px;
     background-color: #c7c8cc;
     border-collapse: collapse;
-    /* par défaut la bordur contient 2 traits, pour que le trair soit unique on utilise la propriete border collapse avec la valeur collapse*/
+    /* par défaut la bordur contient 2 traits, pour que le trair soit unique on utilise la propriete border collapse avec la valeur collapset*/
 }
 th, td {
-    border: #6e2142 3px solid;
+    border: #6e2142 2px solid;
     padding: 10px;
+    text-align: center;
 }
 thead, tfoot{
-    background-color: blueviolet;
+    background-color: #be7575;
+}
+
+#demoRowspan tr :first-child:not(:last-child){
+    background-color: #be7575;
+}
+/* *****************************exercice 1************************** */
+#exo1 td,#exo2 td{
+    height: 50px;
+    width: 50px;
+}
+
+.noir{
+    background-color: black;
+}
+#exo1 td ,#exo2 td{
+    border: none;
+}
+
+.rouge{
+    background-color: red;
+}
+
+.borderT{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }

@@ -1,0 +1,29 @@
+body{
+    background-color: #FFE7E7;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+table{
+    background-color: #FFF6E9;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid#6E2142;
+}
+caption{
+    color: #6E2142;
+    text-transform: uppercase;
+    
+}
+td.block{
+    background-color: black;
+}
+tr td.block{
+    flex-direction: row;
+}
+td.block{
+    background-color: black;
+}
