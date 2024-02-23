@@ -1,42 +1,79 @@
 *{
     box-sizing: border-box;
+
 }
 body{
-    margin: 0 auto;
-    width: 90%;
-    height: auto;
+    margin: 20px auto;
+    width: 80%;
 }
 main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid gray;
 }
 header{
     width: 100%;
     display: flex;
     text-align: center;
-    padding: 10px;
 }
-div{
-    width: 33%
+header div{
+    width: 33.333333333333%;
+    padding: 20px;
 }
+
+header div:first-child{
+    background-color: #5F9EA0;
+}
+header div:nth-child(2){
+    background-color: #008B8B;
+}
+header div:last-child{
+    background-color: #00CED1;
+}
+
 nav{
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #FFEBCD;
 }
 nav a{
     padding: 10px;
+    text-decoration: none;
+    color: black;
 }
-
-/* section */
-section.section1{
+/* section1 */
+.section1{
     width: 100%;
     display: flex;
     justify-content: center;
+    border: 5px solid white;
 }
-section.section1 article{
-    padding: 50px;
+.section1 article{
+    padding: 100px 0;
+    width: 50%;
+    text-align: center;
+}
+.section1 article:first-child{
+    background-color:#A9A9A9;
+}
+.section1 article:last-child{
+    background-color:#708090;
+}
+/* *************************************section2 */
+@media (min-width:1200px){
+    body{
+        width: 100%;
+    }
+
+    .section2 article{
+    
+    }
+    
+}
+@media (min-width:1024px) and (max-width:1199.99px) {
+    
 }
 .section2{
     display: flex;
@@ -44,22 +81,45 @@ section.section1 article{
     text-align: center;
     flex-wrap: wrap;
 }
-.section2 h2{
+.section2 h3{
     width: 100%;
+    margin: 0;
+    background-color: #B0E0E6;
+    padding: 20px;
 }
 .section2 article{
     width: 25%;
-    padding:40px
+    height: ;
+    padding:100px;
 }
-.section2 article:first-child{
+
+.section2 :nth-child(2){
     background-color: #87CEEB;
 }
-.section2 article:nth-child(2){
+.section2 :nth-child(3){
     background-color:#40E0D0;
 }
-.section2 article:nth-child(3){
+.section2 :nth-child(4){
     background-color:#2E8B57;
 }
-.section2 article:last-child{
+.section2 :last-child{
     background-color:#98FB98;
+}
+
+/* ******************footer**************** */
+footer{
+    display: flex;
+    width: 100%;
+}
+
+footer div{
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+footer div:first-child{
+    background-color:#DB7093;
+}
+footer div:last-child{
+    background-color: #AFEEEE;
 }
