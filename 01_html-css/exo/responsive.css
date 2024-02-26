@@ -19,6 +19,7 @@ body{
 header{
     display: flex;
     flex-wrap: wrap;
+    width:100%;
 }
 header div{
     width:100%;
@@ -36,15 +37,18 @@ header div:last-child{
 }
 
 nav{
-    display: none;
+    /* display: none; */
     background-color:blanchedalmond;
     height: 100px;
     line-height:100px;
 }
 nav a{
     color:#000;
+    font-weight: bold;
 }
-
+h3{
+    font-weight: lighter;
+}
 /* **********************************main************************ */
 
 /* *********************************DIV1********************* */
@@ -109,4 +113,62 @@ footer p:first-child{
 }
 footer p:last-child{
     background-color: paleturquoise;
+}
+/* ***********************Media QUERY *************/
+@media screen and (min-width:480px){
+    header div:first-child,header div:nth-child(2),main div:last-child article{
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (min-width:768px){
+    header div{
+        width: 33.33% !important;
+    }
+
+    main div:first-child article{
+        width: 50%;
+        height: 300px;
+        line-height: 300px;
+    }
+    main div:nth-child(2) p{
+        font-size: 25px;
+    }
+}
+
+
+
+@media screen and (min-width:901px){
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    nav{
+        display: block;
+    }
+
+    nav a{
+        margin: 0 15px;
+    }
+
+    main div:nth-child(3) article{
+        width: 25%;
+        height: 250px;
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1400px){
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
