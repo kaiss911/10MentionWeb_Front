@@ -2,62 +2,66 @@
 
 :root{
     font-size: 62.5%;
-    --gris-clair:#ddd;
-    --blanc : #fff;
-    --noir : #000;
-    --ocre : #a55122;
-    --chocolat :#4b2510;
-    --color-text:#333;
+    --gris-clair: #ddd;
+    --blanc: #fff;
+    --noir: #000;
+    --ocre: #a55122;
+    --chocolat: #4b2510;
+    --color-text: #333;
 
 }
 
-body{
-     background-color:var(--gris-clair);
-     color: var(--color-text);
+body {
+    background-color: var(--gris-clair);
+    color: var(--color-text);
 }
-.container{
+
+.container {
     background-color: var(--blanc);
 }
-header{
+
+header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-header div{
+
+header div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-header div img{
-    padding:2rem;
+
+header div img {
+    padding: 2rem;
 }
-h1{
+
+h1 {
     font-family: 'Philosopher', sans-serif;
     font-size: 2.5rem;
     color: var(--ocre);
     font-weight: bolder;
     padding-bottom: 1.5rem;
 }
-nav{
+
+nav {
     display: flex;
     flex-wrap: wrap;
     font-size: 1.5rem;
     text-align: center;
 }
-nav a{
-    background-color:var(--gris-clair);
+
+nav a {
+    background-color: var(--gris-clair);
     padding: 1rem;
     margin: .1rem;
     color: var(--noir);
-    font-weight:600;
+    font-weight: 600;
     text-transform: uppercase;
 }
+/* MAIN */
 
-main{
-    width: 80%;
-    margin: 2rem auto;
-}
 section {
     width: 80%;
     margin: 0 auto;
@@ -65,72 +69,233 @@ section {
     display: flex;
     flex-wrap: wrap;
 }
-section h2{
+
+section h2 {
     font-size: 1.9rem;
     font-weight: bolder;
     padding: 1rem 0;
     text-align: center;
 }
-section p{
+
+section p {
     font-size: 1.7rem;
     padding: 2rem 0;
     line-height: 2rem;
 }
-aside{
+
+aside {
     display: none;
 }
-footer{
-    display:flex;
+
+footer {
+    display: flex;
     justify-content: center;
+    padding: 2rem;
 }
+
 @media screen and (max-width:767.99px) {
 
-.col-sm-1 {
-    width: 8.333333%;
+    .col-sm-1 {
+        width: 8.333333%;
+    }
+    .col-sm-2 {
+        width: 16.666666%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.333333%;
+    }
+    .col-sm-1 {
+        width: 41.666666%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.333333%;
+    }
+    .col-sm-8 {
+        width: 66.666666%;
+    }
+    .col-sm-9 {
+        width: 75%;
+    }
+    .col-sm-10 {
+        width: 83.333333%;
+    }
+    .col-sm-11 {
+        width: 91.666666%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+
 }
 
-.col-sm-2 {
-    width: 16.666666%;
+
+@media screen and (min-width:767.99px) {
+    .col-md-1 {
+        width: 8.333333%;
+    }
+    .col-md-2 {
+        width: 16.666666%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.333333%;
+    }
+    .col-md-5 {
+        width: 41.666666%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.333333%;
+    }
+    .col-md-8 {
+        width: 66.666666%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-10 {
+        width: 83.333333%;
+    }
+    .col-md-11 {
+        width: 91.666666%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .container{
+        width: 90%;
+        margin:0 auto;
+    }
+    header {
+        justify-content: center;
+    }
+    nav a {
+        margin: 0;
+    }
+    main{
+        border-bottom: 1px var(--gris-clair) solid;
+    }
+    section h2{
+        padding: 2.5rem;
+    }
+    section{
+        justify-content: center;
+    }
+    section p {
+        text-align: left;
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem;
+        justify-content: space-between;
+    }
+    aside h3{
+        font-size: 1.7rem;
+        color:var(--chocolat);
+        font-weight: bold;
+        padding: 0 0 1rem 1rem;
+        border-bottom: 1px solid var(--gris-clair);
+    }
+    aside ol{
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    hr{
+        margin-bottom: 1rem;
+    }
+
+    aside div:nth-child(2) div{
+        padding-top: 1.5rem;
+    }
 }
 
-.col-sm-3 {
-    width: 25%;
-}
+@media screen and (min-width:1200px){
+    .col-xl-1 {
+        width: 8.333333%;
+    }
+    .col-xl-2 {
+        width: 16.666666%;
+    }
+    .col-xl-3 {
+        width: 25%;
+    }
+    .col-xl-4 {
+        width: 33.333333%;
+    }
+    .col-xl-5 {
+        width: 41.666666%;
+    }
+    .col-xl-6 {
+        width: 50%;
+    }
+    .col-xl-7 {
+        width: 58.333333%;
+    }
+    .col-xl-8 {
+        width: 66.666666%;
+    }
+    .col-xl-9 {
+        width: 75%;
+    }
+    .col-xl-10 {
+        width: 83.333333%;
+    }
+    .col-xl-11 {
+        width: 91.666666%;
+    }
+    .col-xl-12 {
+        width: 100%;
+    }
 
-.col-sm-4 {
-    width: 33.333333%;
-}
+    .container{
+        width: 70%;
+        margin: 0 auto;
+    }
+    nav{
+        justify-content: center;
+    }
+    nav a{
+        background-color: transparent;
+    }
+    header div{
+        flex-direction: row;
+    }
+    h1{
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    main{
+        border-top: 1px solid var(--gris-clair);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    section + hr{ /* C'est un selécteur adjacent .il permet de ne sélectionner que l'élément qui est imediatement précéder par le premier éléments cibler*/
+        display: none;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 771px;
+    }
+    aside div{
+        margin-bottom: 10rem;
+    }
+    aside ol{
 
-.col-sm-1 {
-    width: 41.666666%;
-}
-
-.col-sm-6 {
-    width: 50%;
-}
-
-.col-sm-7 {
-    width: 58.333333%;
-}
-
-.col-sm-8 {
-    width: 66.666666%;
-}
-
-.col-sm-9 {
-    width: 75%;
-}
-
-.col-sm-10 {
-    width: 83.333333%;
-}
-
-.col-sm-11 {
-    width: 91.666666%;
-}
-
-.col-sm-12 {
-    width: 100%;
-}
-
+    }
 }
