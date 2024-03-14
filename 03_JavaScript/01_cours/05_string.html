@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //---------------------------------------
+            //-Les strings et concatenation
+        //------------------------------------
+
+        //Nous pouvons initialiser une chaine de caractère de plusieurs facon
+
+        //avec des guillemets simples (simples quotes)
+        const PRENOM = 'Kaiss'
+        //avec des quillemets double (double quotes)
+        const NOM = "BADI"
+
+        // avec simple quotes et backslash (ou antislash):
+        const ADRESSE = 'J\'habite au coudray';
+
+        document.write('je suis '+PRENOM+' '+NOM+' '+ADRESSE +'<br>');
+        //initialiser des constante avec un seul prefixe
+        const PRENOM2 = "Marc" , NOM2 = "ISAAC";
+
+        // avec les backquotes (``)
+        let bienvenue = `Bonjour vous êtes les bienvenue : ${PRENOM2} et ${PRENOM}`;
+        document.write(bienvenue);
+
+        age = prompt('quelle est votre age');
+        document.write(`vous avez ${age} ans`);
+
+        //////////////////////////////////////////
+        // le "=" au niveau des strings
+
+        let fruits = "pommes";
+        document.write(fruits);
+        fruits += 'Fraise';
+        fruits += 'Mangue';
+        document.write(fruits);
+        //Contrairement au "=" d'afectation qui remplace la valeur de la variable, j'utilise ici += qui va ajouter la nouvelle valeur à la valeur de la variable
+
+        //----------------------------------
+        //Convertir un string avec number
+        //----------------------------------
+    document.write('<br>');
+
+        let unNombre = "24";
+        document.write(typeof(unNombre));
+        //por convertir le string "24" en nombre 24
+        unNombre = parseFloat(unNombre);
+        document.write(typeof(unNombre));
+        //----------------------------------
+        //Convertir un string avec string
+        //----------------------------------
+        unNombre = unNombre.toString();//tostring permet de convertir un nombre entier ou decimal en string
+        document.write(typeof(unNombre));
+
+    </script>
+</body>
+</html>
