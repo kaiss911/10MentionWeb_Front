@@ -26,6 +26,137 @@
         console.log(myArray);
         //my array et monTableau sont des tableaux qui peuvent contenir plusieurs information.
 
+        //affecter des valeurs au tableau, plusieurs méthodes :
+
+            // A-
+            monTableau = ["Paul","Adama","Semir"];//Chaque ellement dans un tableau est séparé par une virgule
+            console.log(monTableau);
+            console.table(monTableau);
+
+            // B-
+
+            // Chaque ellement dans un tableau est identifiable par son index
+            // ATTENTION : un tableau commence a l'index 0 !!!!!
+            myArray[0] = "Cleid";
+            myArray[1] = "Imane";
+            myArray[2] = "Maureene";
+            myArray[3] = "Gary";
+
+            console.table(myArray);
+
+            //pour selectionner un éléments dans notre tableau, il suffit d'appeler :monTableau[indexdésiré]
+            console.log(myArray[2]);
+
+            //REMARQUE
+            const PRENOM = 'kaïss';
+            console.log(PRENOM[2]);//ï
+
+            //exo
+            let myArray2 = ["NAJJAHI","Manigat","MAROLANY","MONTEIRO"];
+            document.write(myArray2[0]+" "+myArray[1]+"<br>"+ myArray2[1]+" "+myArray[0]+"<br>"+myArray2[2]+" "+myArray[2]+"<br>"+ myArray2[3]+" "+myArray[0]+"<br>");
+
+            //création d'un tableau avec deux tableaux indéxés
+            let groupe1 = [myArray, myArray2];
+            document.write(groupe1[1][0]+ " "+ groupe1[0][1]+"<br>"+groupe1[0][0]+ " "+ groupe1[1][1]+"<br>"+groupe1[1][2]+ " "+ groupe1[0][2]+"<br>"+groupe1[1][3]+ " "+ groupe1[0][3]);
+
+            /*créer un tableau multidimentionel qui permet d'afficher cette ligne:
+            nom : ferchichi , prenom : sahar, téléphone 0755555555 
+                sachant que nom , prénom et téléphone sont les éléments du premier tableau avec l'index 0
+            et
+                les valeur :ferchichi , sahar et 077543245
+            */
+
+            let N = ["nom","prenom","telephone"];
+            let F = ["ferchichi","sahar","07555555555"];
+            let NF =[N,F]
+
+            document.write("<br>"+NF[0][0]+":"+NF[1][0]+", "+NF[0][1]+":"+NF[1][1]+", "+NF[0][2]+":"+NF[1][2] +"<br>")
+
+            //----------------------------------------
+            // Tableau associatif
+        //----------------------------------------
+        let informations = { 
+            prenom : "sahar", 
+            nom : "FERCHICHI" , 
+            age : 20 ,
+            tel : 757575757575 , 
+        };
+        console.table(informations);
+        console.log(informations["age"]);
+        console.log(informations.age);
+
+        //----------------------------------------
+            // Tableau associatif mutidimensionnel
+        //----------------------------------------
+        let contact = {
+            contact1 : {
+                prenom: "Semir",
+                nom: "Sarajlic",
+                tel: "12456732"
+            },
+            contact2 : {
+                prenom: "Adama",
+                nom: "Cissoko",
+                tel : "124567898765"
+            },
+            contact3 : {
+                prenom : "Paul",
+                nom : "Pierrard",
+                tel: "7654367654"
+            }
+        };
+
+        document.write(contact.contact1.prenom +" "+ contact.contact1.nom +" "+contact.contact1.tel +"<br>"+ contact.contact2.prenom +" "+contact.contact2.nom +" "+ contact.contact1.tel +"<br>" + contact.contact3.prenom +" "+contact.contact3.nom +" "+ contact.contact3.tel);
+
+        //Tableau avrc 4 dimensions
+        let array4Dimensions = [
+            {
+                prenom:"sahar",
+                nom:"FERCHICHI",
+                coordonnees:{
+                    email:"sahar.ferchichi@gmail.com",
+                    tel:{
+                        fixe:2456789876543,
+                        fax:34563342633,
+                        port: {
+                            prive:24363434512,
+                            pro:3245345345634,
+                        }
+                    },
+                    adresse:{
+                        ville: "EVRY",
+                        cp : 91000,
+                        pays : {
+                            code: "fr",
+                            nom:"France"
+                        }
+                    },
+                    mdp:[
+                        "à_è&-'_è",
+                        "èeurge"
+                    ]
+                }
+            }
+        ]
+        document.write(`<br>`)
+        document.write(array4Dimensions[0].coordonnees.email+"<br>"+array4Dimensions[0].coordonnees.tel.fax+"<br>"+array4Dimensions[0].coordonnees.tel.port.prive+"<br>"+array4Dimensions[0].coordonnees.adresse.pays.code);
+
+        // email 
+        document.write(` ${array4Dimensions[0]["coordonnees"]["email"]} <br>`);
+                document.write(` ${array4Dimensions[0].coordonnees.email} <br> `);
+        // fax
+                document.write(` ${array4Dimensions[0]["coordonnees"]["tel"]["fax"]} <br> `);
+                document.write(` ${array4Dimensions[0].coordonnees.tel.fax} <br> `);
+        // prive
+                document.write(` ${array4Dimensions[0]["coordonnees"]["tel"]["port"]["prive"]} <br> `);
+                document.write(` ${array4Dimensions[0].coordonnees.tel.port.prive} <br> `);
+
+        // code
+                document.write(` ${array4Dimensions[0]["coordonnees"]["adresse"]["pays"]["code"]} <br> `);
+                document.write(` ${array4Dimensions[0].coordonnees.adresse.pays.code} <br> `);
+        //mdp    
+                document.write(array4Dimensions[0].coordonnees.mdp[1])
+
     </script>
 </body>
 </html>
