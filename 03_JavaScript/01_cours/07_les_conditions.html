@@ -15,7 +15,7 @@
             <  strictement inférieur
             >= supérieur ou égale
             <  inférieur ou égale
-            == pour faire un ecomparaison de valeur// il permet de veraifier que les VALLEUR de 2 variables sont identiqued
+            == pour faire un ecomparaison de valeur// il permet de verifier que les VALLEUR de 2 variables sont identiqued
             === pour faire une comparaison de valeur et de type // signifie "STRICTEMENT Egale à"// il permet de verifier la valeur ET le TYPE
             != différent de en valeur 
             !== STRICTEMENT différent de (VALEUR ET TYPE)    
@@ -77,28 +77,140 @@
        
 
             //if
-       if(condition){
-            // le code si la condition est vrai
-       }
+      
 
 //--------------------------------------------------------------------------------
             
-            //if else
-        if (condition) {
-            //le code si la condition est vrai
-        } else {
-            //le code si la condition est fausse
+let a=10
+let b=5
+
+
+        if (a==8) {
+            document.write("a est égale a 8")
+        } else if (a!=10){
+            document.write("a est different de 10")
+        }else{
+            document.write("tout le monde est faux <br>")
         }
 
-//-----------------------------------------------------------------------------------
-            //if else if else
-        if (condition) {
-            //le code si la condition est vrai
-        } else if (condition) {
-            //le code si la condition est vrai
+
+        if (a==10) {
+            document.write("a est égale a 10<br>")
+        } else if (a!=10){
+            document.write("a est different de 10<br>")
         }else{
-            //le code si toutes les autres condition sont fausses
+            document.write("tout le monde est faux<br>")
         }
+
+
+        if (a==10) {
+            document.write("a est égale a 10<br>")
+        } else if (a>b){
+            document.write("a est supérieur à b<br>")
+        }else{
+            document.write("tout le monde est faux<br>")
+        }
+
+        //avec des if les conditiond sont toutes exécutées et dès que l'une des condition es vrai le résultat est affiché
+        if(a == b){
+            document.write("a est egale a 10<br>")
+        }
+        if(a>b){
+            document.write("a est supperieur a b<br>")
+        }
+        if(a<b){
+            document.write("a est inferieur a b<br>")
+        }
+        //-----------------------------------------------------------------------------------
+        //la condition ternaire nous permet de faire une vérification mais sur une seule ligne 
+
+        let meteo = "pluie";
+
+        if (meteo == "pluie") {
+            document.write("prend un parapluie <br>")
+        } else {
+            document.write("met un short <br>")
+        }
+        let ternaire = (meteo == "pluie") ? "prend un parapluie <br>" : "mets un shorts <br>";
+
+        let monAge = prompt("donner votre age");
+        let age = (monAge > 18) ? "vous etes majeur <br>" : "vous etes mineur<br>";
+        document.write(age);
+
+        document.write((monAge >= 18)? "vous etes majeur":"vous etes mineur");
+
+        //La condition switch
+        
+        let valeur = 5+10;
+        switch (valeur) {
+            case 5:
+                document.write("la valeur est egale à 5 <br>")
+                break;
+            case 10:
+                document.write("la valeur est egale à 10 <br>")
+                break;
+            case 15:
+                document.write("la valeur est egale à 15 <br>")
+                break;
+                
+                default:
+                    document.write("la valeur est indeterminer<br>")
+                    break;
+                }
+                
+               jour = prompt("inserer un jour");
+
+        switch (jour) {
+                case "lundi":
+                document.write("lundi <br>")
+
+                break;
+                case "mardi":
+                document.write("mardi <br>")
+
+                break;
+                case "mercredi":
+                document.write("mercredi <br>")
+
+                break;
+                case "Jeudi":
+                document.write("jeudi <br>")
+
+                break;
+                case "vendredi":
+                document.write("vendredi <br>")
+
+                break;
+                case "samedi":
+                document.write("samedi <br>")
+
+                break;
+        
+            default:
+                document.write("dimanche <br>")
+                break;
+        }
+
+
+        if (jour == "lundi") {
+            document.write("lundi <br>")
+        } else if (jour == "mardi") {
+            document.write("mardi <br>")
+        }else if (jour == "mercredi") {
+            document.write("mercredi <br>")
+        }else if (jour == "jeudi") {
+            document.write("jeudi <br>")
+        }else if (jour == "vendredi") {
+            document.write("vendredi <br>")
+        }else if (jour == "samedi") {
+            document.write("samedi <br>")
+        } else{
+            document.write("ces indefini")
+        }
+
+
+
+
     </script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Les boucles nous permettent d'exécuter une ou plusieurs instructions un certain nombre de fois
+        // Une boucle respecte une condition
+        // Tant que cette condition est respectée, nous allons exécuter des instructions en boucle.
+        // La plupart du temps, nous utilisons les boucles pour parcourir chaque élément d'un tableau
+        // Il y a différents types de boucles, les plus utilisées sont la boucle "FOR" et la boucle "WHILE"
+        
+        //--------------------------------------------------------
+            //boucle for
+        //------------------------------------------------------------
+
+        /*
+            syntaxe
+                for(3 arguments : initialisation ; condition de continuité ; incrémentation){
+                    code à exécuter
+                }
+        
+        */
+
+        // i = 0    j'initialise le départ de la boucle à 0
+       // i <=   tant que la valeur de i est inférieure ou égale à 10
+       // i++    j'incrémente un tour de boucle
+       // En gros je donne l'instruction de faire un tour de boucle supplémentaire tant que la valeur de i n'est pas égale ou supérieure à 10
+    //    for (let i = 0; i < 1000; i+=2) {
+    //     document.write("<h1>il est 19H00 c'est bientôt l'heure de manger</h1>")
+    
+    //    }
+
+       
+    
+       //Je boucle sur un tableau
+       let jours =["Lundi","Mardi","Mercredi","Jeudi","Vendredi"];
+
+       for (let i = 0; jours.length; i++) {
+        document.write(jours[i]);
+        
+       }
+
+    /*
+        syntaxe
+        
+            //initialisation dela variable while(expression qui vaut true ou false)
+    */
+   let j =0;
+   while (j<=5){// tant que j est inferieur ou égale a 5
+        document.write(`${j} / `)//j'execute l'instruction
+        j++ //à chaque tour de boucle , j'incrémente la variable
+   }
+
+
+   let tab1=["henri","dupont","duchene","badi","picheau"];
+   let tab2=["jhon","kaiss","paul","pierre","joe"]
+   let tab3=["10","25","56","4","89"]
+
+   for (let i = 0; i < 5; i++) {
+    document.write(tab1[i],tab2[i],tab3[i]);
+    
+   }
+   
+    </script>
+</body>
+</html>
