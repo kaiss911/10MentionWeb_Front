@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hello(){
+            prenom = prompt("inserer votre prenom");
+            if (isNaN(prenom)|| prenom != null || prenom !=" "){
+                age = prompt("bonjour "+prenom+" ,quel age a tu ?");
+                if (age != null && !isNaN(parseInt(age))&& age != " ")  {
+
+                    let date = new Date()
+                    annenaissance = date.getFullYear - age;
+                    confirm("vous etes bien née en "+annenaissance);
+                    document.write("bonjour "+prenom+", tu as "+age+" ans")
+                } else {
+                    alert('entrer votre age SVP')
+                }
+            }else{
+                alert('entrez votre nom svp')
+            }
+            }
+            hello();
+            
+            ////---------------------
+            //porter
+            ////---------------------
+            // Les variables définies à l'intérieur d'une fonction sont locales à cette fonction
+        // les variables déclarées à l'intérieur d'une fonction sans utiliser var, let ou const seront automatiquement considérées comme globales
+        
+        function mafonction3 (){
+            maVariable = 10
+        }
+        mafonction3()
+        document.write(maVariable);
+
+
+
+
+
+
+        //Depuis ES6 (ECMAScript 6, en 2015), il existe une autre façon d'écrire nos fonctions
+
+        //--------------------------
+        // FONCTION FLÉCHÉE (arrow functions)
+        //--------------------------
+
+        //  sont une syntaxe plus concise pour définir des fonctions 
+        // sont devenues très populaires en raison de leur simplicité et de leur lisibilité
+        let fonctionfleche = (x,y) => {
+            console.log(x+y);
+        };
+
+
+        // Si la fonction ne prend qu'un seul paramètre, vous pouvez même omettre les parenthèses autour du paramètre :
+        let fonctionfleche2 = param => {
+            // Corps de la fonction
+        };
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

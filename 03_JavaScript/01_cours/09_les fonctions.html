@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les fonctions en JS</title>
+</head>
+<body>
+    <script>
+        ////-----------------------------------------
+        //Les fonction
+        ////-------------------------------------------
+        /*
+            Un des grands principes en programmation est d'avoir un code DRY (Don't Repeat Yourself)
+            Les fonctions sont des blocs de code réutilisables et modifiables, à volonté qui peuvent être appelés pour effectuer une tâche spécifique. Elles sont définies à l'aide du mot-clé function     
+        */
+
+        ////-----------------------------------------
+        //-SYNTAXE
+        ////-------------------------------------------
+
+        //cette syntaxe définit une fonction nommée maFonction
+        function maFonction() {// Fonction nommée en utilisant ce nom
+            // corp de la fonction
+        }
+
+        //Cette sintaxe définit une fonction anonyme et l'assingne à une variable nommée mafonction1
+        let maFonction1 =function(){//fonction anonymes
+
+        };
+        //cette syntaxe est plus concise introduite dans ECMAscript 6 (ES6)
+        () => {//fonction fléchées
+            //corps de la fonction
+        }
+
+        ////--------------------------------------
+        //initialisation
+        ////--------------------------------------
+
+        function greetings(){//Déclaration d'une fonction
+            document.write("hello world");
+
+        }
+
+        greetings();//je vais executer ma fonction et déclencher ses instructions
+
+        //afin que notre fonction soit paramétrable, nous alons utiliser des paramètre.
+        //des paramétre sont comme des variables / option , qui sont utiliser dans la fonction, et cec parametres sont 
+        //fournit en tant qu'argument lord de l'appelle de la fonction
+        let prenom= prompt("entrez votre prénom")
+        let profession = prompt("entrez votre profession")
+        function bonjour1 (prenom , profession){
+            document.write(prenom+profession+"<br>")
+        }
+        bonjour1(prenom,profession);
+
+         
+    let a = prompt("entrer un premier nombre "); 
+    let b = prompt ("entrer un deuxieme nombre"); 
+     
+    function multiply(a, b) { 
+      document.write("le resultat de la multiplication de "+a+"*"+b+"="+a * b); 
+    }
+    multiply(a,b) 
+
+    // les fonction greetings , bonjour et calcul ne retourne aucune valeur 
+
+        ////-----------------------------------------
+        // RETOURNER UNE VALEUR
+        ////-----------------------------------------
+       //Les fonctions peuvent retourner une valeur en utilisant le mot-clé return. Si aucune valeur n'est retournée, la fonction retourne undefined.
+        function calculage(annee,naissance){
+
+            age = annee - naissance;
+            document.write("votre age est de "+age+" ans");
+        }
+        calculage(2024,1972);
+
+
+
+
+        function calculage(annee,naissance){
+
+        return age = annee - naissance;
+        }
+        calculage(2024,1972);
+        document.write("votre age est de "+age+" ans");
+
+        //tout se qui se trouve apres le return ne s'execute pas 
+        //unn return arrete complétement l'execution d'une fonction
+        
+
+    
+    </script>
+</body>
+</html>
