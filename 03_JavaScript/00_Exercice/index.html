@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //exo 11
+let myArray = [];
+function array (nb1, nb2){
+    for (let i = 0; i < nb2 ;i++) {
+        myArray.push(nb1);
+    }
+    document.write("myArray = [" + myArray + " ] <br>")
+    myArray = [];
+}
+
+array (8 , 2);
+array (9 , 4);
+
+//exo 12
+
+
+//1 er facon de faire
+let tab = [ 50, 34 , 356 , 78 ,90];
+let sommeTableau = () =>{
+    let somme = 0 ;
+    for (let i = 0; i < tab.length; i++) {
+        somme += tab[i];
+    }
+    document.write(somme+ "<br>");
+}
+
+
+// 2eme facon de faire
+let Monarray = function(nombre){
+    let k = 0
+    for (let i = 0; i < nombre.length; i++) {
+        k+= nombre[i];
+    }
+    return k ;
+}
+document.write(Monarray([23,3234 ,24,90]))
+
+
+
+    </script>
+</body>
+</html>
