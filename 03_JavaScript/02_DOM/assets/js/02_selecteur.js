@@ -94,10 +94,10 @@ nouveauParadebut.style.color = "green";
 section.prepend(nouveauParadebut);//prepend() insert du contenu au debut de la section 
 
 let parent = document.querySelector('main');
-let jebouge = document.querySelector('h4');
+let h4 = document.querySelector('h4');
 let h2 = document.querySelector('subtitle');
 
-parent.insertBefore(jebouge,h2)
+parent.insertBefore(h4,h2)
 
 
 
@@ -113,10 +113,12 @@ let li = document.querySelector('ul :nth-child(2)')
 ul.removeChild(li);
 
 let baliseA = document.querySelector('a');
-baliseA.setAttribute("href", "01_introduction.html");
 
 
+let newLink = document.createElement('a');
+titre.append(newLink)
 
+newLink.setAttribute("href", "01_introduction.html");
 
 
 
@@ -125,11 +127,23 @@ baliseA.setAttribute("href", "01_introduction.html");
 // Grâce à votre script, créez une balise a dans la balise h1 avec le lien vers la documentation JS () qui s'affiche sur un nouvel onglet.
 // Ce lien sera de couleur blanche et non souligné.
 
-let createA = document.createElement('a');
-let pe = document.querySelector('div');
-let h1 = document.querySelector('h1');
 
-createA.insertBefore(pe,h1);
+let createA = document.createElement('a');
+createA.setAttribute("href","https://developer.mozilla.org/fr/docs/Web/JavaScript");
+createA.setAttribute("target","_blank");
+titre.append(createA)
+
+
+createA.innerHTML = "link";
+createA.style.textAlign = "center";
+createA.style.textDecoration = "none";
+createA.style.color = "white";
+
+
+
+
+
+
 
 
 
