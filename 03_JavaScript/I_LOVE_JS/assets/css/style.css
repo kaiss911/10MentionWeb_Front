@@ -104,15 +104,52 @@ h1{
 /* **************video********************* */
 
 .bloc-btn{
-    width: 40%;
-    margin: 2rem auto;
+    width: 100%;
+    margin: 0 auto;
 }
-.bloc-btn i {
+.bloc-btn .bi .bi-emoji-neutral{
     font-size: 3.5rem;
 }
 .btn-abonner{
     padding: 1rem;
+    font-size: 1.4rem;
     background-color: #1e2337;
     border: none;
     color: #F1bf2a;
+}
+
+/**************** footer *****************/
+
+
+footer {
+    background-color: #1E2337;
+    margin: 0 !important;
+    
+}
+footer li {
+    padding: 7px;
+}
+
+footer li a{
+    color: #fff;
+    font-size: 1.3rem;
+    
+}
+
+.cookies{
+    background-color: grey;
+    padding: 3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    opacity: 1;
+    transition: .5s;
+}
+
+.cookies button{
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: ;
 }

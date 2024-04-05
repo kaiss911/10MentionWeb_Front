@@ -51,6 +51,18 @@ function changeEmoji(){
 }
 
 function changeabonne(){
-    abonne.textContent="abonneeee";
-    
+    if (abonne.innerText === "Abonnez-vous") {
+        abonne.innerHTML ='abonneeee  <i class="bi bi-emoji-neutral"></i>';
+        
+    } else{
+        abonne.innerText="Abonnez-vous";
+    }
 }
+let btnCoukies = document.querySelector('.btn-success')
+let cookies = document.querySelector('.cookies');
+
+btnCoukies.addEventListener('click',()=>{
+    cookies.computedStyleMap.opacity
+})
+
+
