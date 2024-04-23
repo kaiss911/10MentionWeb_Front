@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none!important;
+}
+div.d-flex > p {
+    margin-bottom: 0;
+}
+.bg-section2{
+    background-image: url(../img/bg-curve-desktop.svg);
+    background-size: cover;
+}
+#pp{
+    border-radius: 50%;
+}
+button{
+    flex: 0 0 auto !important;
+}
+.bg-violet{
+    background-color:mediumpurple;
+}
+.bg-purple{
+    background-color: indigo;
+}
+.i{
+    font-size: small;
+}

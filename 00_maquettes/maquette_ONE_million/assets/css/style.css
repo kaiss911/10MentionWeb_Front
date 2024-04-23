@@ -61,7 +61,7 @@ h3{
     font-family: var(--font);
 }
 hr{
-    width: 11rem;
+    width: 11rem !important;
     color:var(--orange);
     margin-bottom: 2.5rem;
     height: .15rem;

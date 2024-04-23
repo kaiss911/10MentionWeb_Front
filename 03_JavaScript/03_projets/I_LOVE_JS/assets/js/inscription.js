@@ -34,13 +34,28 @@ let form = document.querySelector('#form');
 let username = document.querySelector('#username');
 let email = document.querySelector('email');
 let password2 = document.querySelector('#password2');
+let message = "";
 
 form.addEventListener('submit', (event)=>{
-    event.preventDefault();// une methode utiliser dans les evenement Javascript pourempecher le comportement par défaut associé à un évenement de se produire.
+    event.preventDefault();// une methode utiliser dans les evenement Javascript pour empecher le comportement par défaut associé à un évenement de se produire.
     formVerif();
 })
+
 function formVerif(){
-    usernamevalue = username.value;
-    let emailvalue = password.value.trim();
-    let passeword2Cvaluse = password2.value.trim();
+    //
+    let usernameValue = username.value.trim();
+    let emailValue = email.value.trim();
+    let passwordValue = password.value.trim();
+    let password2CValue = password2.value.trim();
+
+    //username verify
+    if (usernameValue == "") {// je verifie si le champs useurname est vide 
+        // si c'est le cas je définit un message d'erreur approprier
+        message = 'Username ne peut pas être vide'
+    }
+}
+
+function setError(element, infos) {
+    let formControl = element.parentElement; //je stock le parent de l'element qui contient l'erreur (la div avec la classe form-control)
+    let small = formControl.querySelector('small')
 }
