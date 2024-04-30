@@ -239,6 +239,30 @@ form{
     display: block!important;
 }
 
+.form-control small{
+    visibility: hidden;
+}
+
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
+.form-control.error input{
+    border: 1px solid red;
+}
+.form-control.error .fa-exclamation{
+    color: red;
+    visibility: visible;
+}
+.form-control.success input{
+    border: 1px solid green;
+}
+.form-control.success .fa-circle-check{
+    color:  green;
+    visibility: visible;
+}
+
+
 button{
     background-color: #61B3FF;
     border: solid 2px #1e2337;
