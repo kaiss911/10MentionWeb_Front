@@ -42,7 +42,7 @@
     right:20px;
 }
 
-.btn{
+nav .btn{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -263,7 +263,7 @@ form{
 }
 
 
-button{
+form button{
     background-color: #61B3FF;
     border: solid 2px #1e2337;
     color: #fff;
@@ -284,7 +284,6 @@ footer li {
 footer li a{
     color: #fff;
     font-size: 1.3rem;
-    
 }
 
 .cookies{

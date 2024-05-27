@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+#ui{
+    position: relative;
+    background-color: darkorchid;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 25px;
+}
+#ui:hover{
+    background-color: chartreuse;
+    padding: 15px;
+    margin: 0;
+}
+#no{
+    display: inline-block;
+}
+h1{
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}

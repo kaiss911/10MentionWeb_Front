@@ -107,3 +107,19 @@ main a{
 main a:hover{
     color: var(--hover-btn);
 }
+.team1{
+    background-image: url(../img/team1.jpg);
+    background-size: cover;
+}
+.team2{
+    background-image: url(../img/team2.jpg);
+    background-size: cover;
+}
+.team3{
+    background-image: url(../img/team3.jpg);
+    background-size: cover;
+}
+.team4{
+    background-image: url(../img/team4.jpg);
+    background-size: cover;
+}

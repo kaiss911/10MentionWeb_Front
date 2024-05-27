@@ -64,7 +64,7 @@ let email = document.querySelector('#email');
 let password2 = document.querySelector('#password2');
 let message = "";
 let Myalert = document.querySelector('#alert');
-
+let inputs = document.querySelectorAll('input');
 
 function setValidation(element, infos = null){
 
@@ -92,8 +92,11 @@ form.addEventListener('submit', (event)=> {
 
        if (donnee.includes("")) {
         Myalert.innerHTML='<p class="alert alert-danger text-center mt-3"role ="alert">Veuillez renseigner tout les champs</p>';
+        for (let input of inputs) {
+            setValidation(input,message);
+        }
        } else {
-        Myalert.innerHTML='<p></p>';
+        Myalert.innerHTML='<p class="alert  alert-success text-center mt-3" role="alert">Votre compte a été crée</p>';
         if(!usernameValue.match(/^[a-zA-Z]+$/)){
             
          
@@ -134,6 +137,9 @@ form.addEventListener('submit', (event)=> {
      }else {
             setValidation(password2);
      }
+    }
+    if (Myalert.innerHTML == "" && message == "") {
+        Myalert.innerHTML = '<p class="alert  alert-success text-center mt-3" role="alert">Votre compte a été crée</p>'
     }
 })
 
